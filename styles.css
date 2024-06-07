@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
+  scroll-behavior: smooth;
+  --cat-img-width: 400px;
 }
 
 body {
@@ -18,16 +19,30 @@ body {
 #header-img {
   width: 50px;
   height: 70px;
-  margin-top: 0.3em; /* align with header text */
+  margin-top: 0.4em; /* align with header text */
 }
 
 #header-title {
-  color: rgb(255, 126, 214)
+  color: rgb(255, 126, 214);
+  margin-top: 2rem;
 ;}
+
+#header-link {
+  text-decoration: none;
+}
+
+#banner {
+  margin-bottom: 50px;
+}
 
 h1 {
   font-size: 3rem;
-  margin-top: 2rem;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0;
 }
 
 h2, h3, h4 {
@@ -39,16 +54,38 @@ p {
   font-size: 1.7rem;
 }
 
+.text {
+  margin: 1.5rem 0;
+}
+
+#navbar {
+  justify-content: space-evenly;
+}
+
 #navbar ul {
   display: flex;
   flex-direction: row;
-  gap: 5em;
+  gap: 3em;
   margin-top: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
   /* how to get responsive squishes and stretches ? */
 }
 
 .nav-link {
   list-style-type: none;
+}
+
+.nav-link > a {
+  text-decoration: none;
+}
+
+.nav-link > a > p {
+  color: rgb(255, 126, 214);
+}
+
+.nav-link > a > p:hover {
+  color: rgb(42, 42, 42);
 }
 
 #banner {
@@ -62,17 +99,69 @@ p {
 }
 
 main {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15%; /* changes with @media selector */
+  margin-right: 15%;
 }
 
 .quote {
   font-size: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.quote-author {
+  color: rgb(134, 134, 134);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+figure {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 #cat-img {
-  width: 400px;
-  height: auto;
+  width: var(--cat-img-width);
+  height: 350px;
+  display: block;
+  margin: 0 auto;
   /* use CSS grid to align text with image */
+}
+
+#cat-img-caption {
+  color: rgb(134, 134, 134);
+  font-size: 1.3rem;
+  width: var(--cat-img-width);
+  margin: 0 auto;
+}
+
+.pricing-catalog {
+  border: 2px solid; /* delete later */
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.product-box {
+  border: 2px solid; /* delete later */
+  height: 300px; /* change with @media tags */
+  width: 300px;
+  margin-top: 50px;
+  padding: 1rem;
+}
+
+.product-img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  main {
+    margin: 0 10%;
+  }
 }
