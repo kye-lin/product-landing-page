@@ -1,0 +1,38 @@
+* {
+  font-size: 10px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+}
+
+#header-img {
+  width: 50px;
+  height: 70px;
+  margin-top: 5px; /* align with header text */
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.nav-link {
+  list-style-type: none;
+}
+
+.quote {
+  font-size: 2rem;
+}
+
+#video {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block; /* necessary for margin: 0 auto; to work */
+}
