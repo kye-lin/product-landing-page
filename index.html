@@ -15,40 +15,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="project to fulfill freeCodeCamp Responsive Web Design's Product Landing Page requirement"
+    <meta name="description" content="project to fulfill freeCodeCamp Responsive Web Design's Product Landing Page requirement" />
     <title>Kobe Mouse</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header id="header">
       <img id="header-img" src="mouse-logo.jpeg" alt="logo" />
-      <h1>Kobe Mouse</h1>
+      <h1 id="header-title">Kobe Mouse</h1>
       <nav id="navbar">
         <ul>
-          <li class="nav-link"><a href="#about">About</a></li>
-          <li class="nav-link"><a href="#pricing">Pricing</a></li>
-          <li class="nav-link"><a href="#contact-us">Contact Us</a></li>
+          <li class="nav-link"><a href="#about"><p>About</p></a></li>
+          <li class="nav-link"><a href="#pricing"><p>Pricing</p></a></li>
+          <li class="nav-link"><a href="#contact-us"><p>Contact Us</p></a></li>
         </ul>
       </nav>
     </header>
-    <section id="about">
-      <h2>Our Mission</h2>
-      <p>Since our founding in 2024, Kobe Mouse has dedicated itself to producing the highest quality cat toys while keeping them affordable for all cat owners across the world. Our mission is to provide all cat owners with great options for cat toys, to keep their furry loved ones happy, healthy and engaged as they grow up.</p>
-      <blockquote>
-        <hr>
-        <p class="quote">Play behavior generally emerges in kittens between 2 and 3 weeks of age</p>
-        <hr>
-      </blockquote>
+    <section id="banner">
       <video id="video" autoplay muted>
         <source src="meohui-cat-mouse-toys.mov" type="video/mp4">
       </video>
     </section>
-    <section id="pricing"></section>
-    <section id="contact-us">
-      <p>We'd love to hear from you! Please send us a message and expect to hear back from us within 48-72 business days.</p>
-    </section>
-
-
-    <img src="kobe-mice-1.jpg" alt="fluffy white cat lying down among mouse toys" />
+    <main id="main">
+      <section id="about">
+        <h1 class="section-header">About</h1>
+        <h2>Our Mission</h2>
+        <p>Since our founding in 2024, Kobe Mouse has dedicated itself to producing the highest quality cat toys while keeping them affordable for all cat owners across the world. Our mission is to provide all cat owners with great options for cat toys, to keep their furry loved ones happy, healthy and engaged as they grow up.</p>
+        <blockquote>
+          <hr>
+          <p class="quote">Play behavior generally emerges in kittens between 2 and 3 weeks of age. - ScienceDirect<sup><a href="https://www.sciencedirect.com/science/article/pii/S0168159118304556">1</a></sup></p>
+          <hr>
+        </blockquote>
+        <img id="cat-img" src="kobe-mice-1.jpg" alt="fluffy white cat lying down among mouse toys" />
+        <!-- features grid -->
+      </section>
+      <section id="pricing"></section>
+        <h1 class="section-header">Pricing</h1>
+      <section id="contact-us">
+        <h1 class="section-header">Contact Us</h1>
+        <p>We'd love to hear from you! Please send us a message and expect to hear back from us within 48-72 business days.</p>
+      </section>
+    </main>
   </body>
 </html>
