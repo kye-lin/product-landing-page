@@ -1,5 +1,4 @@
 <!--
-  Your landing page has a form element with a corresponding id="form"
   Within the form, there is an input field with id="email" where you can enter an email address
   The #email input field should have placeholder text to let users know what the field is for
   The #email input field uses HTML5 validation to confirm that the entered text is an email address
@@ -52,33 +51,60 @@
         </figure>
         <p class="text">As young kittens grow, they need lots of play time. Even as adult cats, they will benefit from the exercise that comes with pouncing and jumping around with a toy. We have designed our toys to fully engage multiple senses—sight, sound, touch, and smell—to maximize your cat's engagement.</p>
         <h2>Features</h2>
-        <p>catnip</p>
-        <p>rattling noise</p>
-        <p>fur</p>
+        <div class="features-container-div">
+          <div class="features-container">
+            <div class="feature-row">
+              <img class="feature-img" src="catnip-bw.png" alt="catnip clipart" />
+              <p class="feature-text">Catnip embedded in each toy attracts cats</p>
+            </div>
+            <div class="feature-row">
+              <img class="feature-img" src="sound-bw.png" alt="catnip clipart" />
+              <p class="feature-text">Rattling noise sounds when toy moves</p>
+            </div>
+            <div class="feature-row">
+              <img class="feature-img" src="safety.jpeg" alt="a black and white sign reading safety first" />
+              <p class="feature-text">Soft pliable fur that is safe for all animals</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="pricing"></section>
+      <section id="pricing">
         <h1 class="section-header">Pricing</h1>
-        <div class="pricing-catalog">
+      </section>
+    </main>
+      <section>
+        <div class="product-box-div">
           <div class="product-box">
-            <h3>Kobe Mouse 6-pack</h3>
-            <p>Description description Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            <h3 class="product-header">Kobe Mouse 6-pack</h3>
+            <p class="product-desc">6 pretty and colorful mouse toys</p>
             <img class="product-img" src="product-6-pack.jpeg" alt="six Kobe Mouse cat toys. each has a different color: blue, orange, pink, yellow, green, and white." loading="lazy" />
           </div>
           <div class="product-box">
-            <h3>Kobe Mouse 12-pack</h3>
-            <p>Description description Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            <h3 class="product-header">Kobe Mouse 12-pack</h3>
+            <p class="product-desc">12 pretty and colorful mouse toys</p>
             <img class="product-img" src="product-12-pack.jpg" alt="twelve Kobe Mouse cat toys. 2 blue, 2 green, 2 orange, 2 yellow, 2 light green, and 2 pink mice." loading="lazy" />
           </div>
           <div class="product-box">
-            <h3>Kobe Mouse 100-pack</h3>
-            <p>Description description Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            <h3 class="product-header">Kobe Mouse 100-pack</h3>
+            <p class="product-desc">Tons of fun that will last your furry friend a lifetime!</p>
             <img class="product-img" src="product-100-pack.jpeg" alt="pile of Kobe Mouse cat toys with an orange cat" loading="lazy" />
           </div>
         </div>
+      </section>
+    <main>
       <section id="contact-us">
         <h1 class="section-header">Contact Us</h1>
-        <p>We'd love to hear from you! Please send us a message and expect to hear back from us within 48-72 business days.</p>
+        <p class="text">We'd love to hear from you! Please send us a message and expect to hear back from us within 48-72 business days.</p>
+        <div class="form-div">
+          <form id="form">
+            <label>First name <input id="first-name" type="text" /></label>
+            <label>Last name <input id="last-name" type="text" /></label>
+            <label>Email <input id="email" type="email" /></label>
+            <label>Message <textarea id="message"></textarea></label>
+          </form>
+        </div>
       </section>
+      <div class="spacing"></div>
     </main>
   </body>
 </html>

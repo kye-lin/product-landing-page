@@ -42,12 +42,15 @@ h1 {
 .section-header {
   text-align: center;
   font-size: 4rem;
-  margin: 2rem 0;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 h2, h3, h4 {
   text-align: center;
   font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -99,8 +102,12 @@ p {
 }
 
 main {
-  margin-left: 15%; /* changes with @media selector */
-  margin-right: 15%;
+  margin-left: 20%; /* changes with @media selector */
+  margin-right: 20%;
+}
+
+blockquote {
+  margin: 5rem 0;
 }
 
 .quote {
@@ -137,8 +144,34 @@ figure {
   margin: 0 auto;
 }
 
-.pricing-catalog {
-  border: 2px solid; /* delete later */
+.features-container-div {
+  display: table;
+  margin: 0 auto;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.feature-img {
+  width: 75px;
+  width: 75px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-text {
+  margin-top: 2.4rem;
+}
+
+.product-box-div {
+  background-color: rgb(255, 248, 215);
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -147,21 +180,70 @@ figure {
 
 .product-box {
   border: 2px solid; /* delete later */
+  background-color: #fff;
   height: 300px; /* change with @media tags */
   width: 300px;
   margin-top: 50px;
   padding: 1rem;
 }
 
+.product-header {
+  margin: 0;
+}
+
+.product-desc {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .product-img {
-  width: 80%;
+  max-width: 150px;
   display: block;
   margin: 0 auto;
-  overflow: hidden;
+  object-fit: contain;
+}
+
+.spacing {
+  height: 200px;
+}
+
+.form-div {
+  display: block;
+  margin: 0 auto;
+  border: 1.5px solid rgb(134, 134, 134);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#form > label {
+  font-size: 1.7rem;
+}
+
+#form > input, #form > textarea {
+  ...
 }
 
 @media (max-width: 1000px) {
   main {
     margin: 0 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-box-div {
+    background-color: rgb(255, 248, 215);
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3rem 0;
+  }
+  .product-box {
+    background-color: #fff;
+    margin: 0 auto;
   }
 }
