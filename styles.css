@@ -14,17 +14,20 @@ body {
 #header {
   display: flex;
   flex-direction: row;
+  height: 60px;
 }
 
 #header-img {
   width: 50px;
   height: 70px;
-  margin-top: 0.4em; /* align with header text */
+  margin-top: -5px;
+  margin-left: 5px;
 }
 
 #header-title {
   color: rgb(255, 126, 214);
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-right: 5rem;
 ;}
 
 #header-link {
@@ -61,22 +64,18 @@ p {
   margin: 1.5rem 0;
 }
 
-#navbar {
-  justify-content: space-evenly;
-}
-
 #navbar ul {
   display: flex;
   flex-direction: row;
-  gap: 3em;
+  gap: 2em;
   margin-top: 3rem;
-  justify-content: space-evenly;
-  align-items: center;
   /* how to get responsive squishes and stretches ? */
 }
 
 .nav-link {
   list-style-type: none;
+  flex: 1;
+  /* nav > ul > li */
 }
 
 .nav-link > a {
@@ -85,6 +84,7 @@ p {
 
 .nav-link > a > p {
   color: rgb(255, 126, 214);
+  margin-top: -1rem;
 }
 
 .nav-link > a > p:hover {
@@ -235,6 +235,51 @@ figure {
 #form > input {
   height: 3rem;
   font-size: 1.5rem;
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  #navbar ul {
+    gap: 8em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: 8em;
+  }
+}
+
+@media (min-width: 900px) {
+  #navbar ul {
+    gap: 10em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: 12em;
+  }
+}
+
+@media (min-width: 1000px) {
+  #navbar ul {
+    gap: 12em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbar ul {
+    gap: 12em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: 40em;
+  }
+}
+
+@media (min-width: 1400px) {
+  #navbar ul {
+    gap: 14em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: 70em;
+  }
 }
 
 @media (max-width: 1000px) {
