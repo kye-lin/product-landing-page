@@ -166,6 +166,11 @@ figure {
   flex-direction: row;
 }
 
+.sound {
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
 .feature-img {
   width: 75px;
   width: 75px;
@@ -203,6 +208,7 @@ figure {
 .product-desc {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .product-img {
