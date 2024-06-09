@@ -76,6 +76,8 @@ p {
   list-style-type: none;
   flex: 1;
   /* nav > ul > li */
+  margin-top: -2rem;
+  padding: 1rem;
 }
 
 .nav-link > a {
@@ -84,7 +86,6 @@ p {
 
 .nav-link > a > p {
   color: rgb(255, 126, 214);
-  margin-top: -1rem;
 }
 
 .nav-link > a > p:hover {
@@ -144,9 +145,15 @@ figure {
   margin: 0 auto;
 }
 
+#features {
+  margin-top: 10rem;
+}
+
 .features-container-div {
   display: table;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
 }
 
 .features-container {
@@ -177,6 +184,8 @@ figure {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 8rem;
+  padding: 50px 0;
 }
 
 .product-box {
@@ -184,7 +193,6 @@ figure {
   background-color: #fff;
   height: 300px; /* change with @media tags */
   width: 300px;
-  margin-top: 50px;
   padding: 1rem;
 }
 
@@ -204,8 +212,29 @@ figure {
   object-fit: contain;
 }
 
+.buy-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(221, 72, 139);
+  border: transparent;
+  border-radius: 5px;
+}
+
+.buy-button:hover {
+  background-color: rgb(151, 30, 84);
+  cursor: pointer;
+}
+
 .spacing {
   height: 200px;
+}
+
+.contact-text {
+  margin-bottom: 4rem;
 }
 
 .form-div {
@@ -237,12 +266,30 @@ figure {
   font-size: 1.5rem;
 }
 
-@media (min-width: 700px) and (max-width: 900px) {
+@media (max-width: 500px) {
   #navbar ul {
-    gap: 8em;
+    gap: 1em;
   }
   #navbar ul li:first-of-type {
-    margin-left: 8em;
+    margin-left: -5em;
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar ul {
+    gap: 1em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: -5em;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 900px) {
+  #navbar ul {
+    gap: 4em;
+  }
+  #navbar ul li:first-of-type {
+    margin-left: 4em;
   }
 }
 
@@ -269,7 +316,7 @@ figure {
     gap: 12em;
   }
   #navbar ul li:first-of-type {
-    margin-left: 40em;
+    margin-left: 45em;
   }
 }
 
@@ -278,7 +325,7 @@ figure {
     gap: 14em;
   }
   #navbar ul li:first-of-type {
-    margin-left: 70em;
+    margin-left: 60em;
   }
 }
 
@@ -291,7 +338,7 @@ figure {
 @media (max-width: 900px) {
   .product-box-div {
     background-color: rgb(255, 248, 215);
-    height: 900px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
