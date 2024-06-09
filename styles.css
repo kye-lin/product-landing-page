@@ -167,7 +167,8 @@ figure {
 }
 
 .feature-text {
-  margin-top: 2.4rem;
+  margin-top: 2.2rem;
+  font-size: 2rem;
 }
 
 .product-box-div {
@@ -210,21 +211,30 @@ figure {
 .form-div {
   display: block;
   margin: 0 auto;
-  border: 1.5px solid rgb(134, 134, 134);
+  border: 1.5px solid rgb(128, 128, 128);
 }
 
 #form {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
+  display: grid;
+  margin: 2rem 5rem;
 }
 
 #form > label {
   font-size: 1.7rem;
 }
 
+#form > label:first-of-type {
+  margin-top: 1rem;
+}
+
 #form > input, #form > textarea {
-  ...
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#form > input {
+  height: 3rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1000px) {

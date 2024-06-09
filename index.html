@@ -96,11 +96,12 @@
         <h1 class="section-header">Contact Us</h1>
         <p class="text">We'd love to hear from you! Please send us a message and expect to hear back from us within 48-72 business days.</p>
         <div class="form-div">
-          <form id="form">
-            <label>First name <input id="first-name" type="text" /></label>
-            <label>Last name <input id="last-name" type="text" /></label>
-            <label>Email <input id="email" type="email" /></label>
-            <label>Message <textarea id="message"></textarea></label>
+          <form id="form" action="...">
+            <label for="first-name">First name</label><input id="first-name" name="first-name" type="text" required />
+            <label for="last-name">Last name</label><input id="last-name" name="last-name" type="text" required />
+            <label for="email">Email</label><input id="email" type="email" name="email" required />
+            <label for="message">Message</label><textarea id="message" name="message" rows="15" cols="50"></textarea>
+            <input type="submit" value="Submit" />
           </form>
         </div>
       </section>
