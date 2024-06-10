@@ -14,7 +14,10 @@ body {
 #header {
   display: flex;
   flex-direction: row;
+  width: 100%;
   height: 60px;
+  position: fixed;
+  background-color: #fff;
 }
 
 #header-img {
@@ -64,7 +67,7 @@ p {
   margin: 1.5rem 0;
 }
 
-#navbar ul {
+#nav-bar ul {
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -272,64 +275,64 @@ figure {
 }
 
 @media (max-width: 500px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 1em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: -5em;
   }
 }
 
 @media (max-width: 600px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 1em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: -5em;
   }
 }
 
 @media (max-width: 700px) and (min-width: 900px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 4em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: 4em;
   }
 }
 
 @media (min-width: 900px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 10em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: 12em;
   }
 }
 
 @media (min-width: 1000px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 12em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: 20em;
   }
 }
 
 @media (min-width: 1200px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 12em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: 45em;
   }
 }
 
 @media (min-width: 1400px) {
-  #navbar ul {
+  #nav-bar ul {
     gap: 14em;
   }
-  #navbar ul li:first-of-type {
+  #nav-bar ul li:first-of-type {
     margin-left: 60em;
   }
 }
